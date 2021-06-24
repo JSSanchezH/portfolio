@@ -33,13 +33,13 @@
 
 .nav-links {
     text-align: left;
-    color: white;
+    color: rgba(255,255,255,.6);
     text-decoration: none;
     display: table;
 }
 
 .nav-links:hover {
-    color: red;
+    color: rgba(255,255,255)
 }
 
 .icon-menu {
@@ -47,7 +47,7 @@
 }
 
 .active {
-    color: black;
+    color: rgba(255,255,255);
 }
 /* Responsive */
 
@@ -55,16 +55,17 @@
     .Sidebar {
         top: auto;
         bottom: auto;
-        position: relative;
         left: auto;
         right: auto;
+        position: relative;
         width: auto;
-        /* padding-bottom: 0; */
+        padding-top: 40px;
+        padding-bottom: 0;
     }
-    .SidebarItems {
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        padding: 45px 30px;
+    .Sidebar.SidebarItems {
+        overflow: initial;
+        height: auto;
+        padding: 0 40px;
     }
 
     .main-nav {
@@ -142,5 +143,10 @@
     width: 25px;
     height: 40px;
     line-height: 40px;
+}
+
+.social [class^="icon-"]:hover {
+    color: rgba(255,255,255);
+    
 }
 

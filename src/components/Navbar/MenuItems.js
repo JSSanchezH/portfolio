@@ -1,22 +1,22 @@
 export const MenuItems = [
     {
         title: 'About Me',
-        url: '/about-me/',
+        url: '/portfolio/about-me/',
         cName: 'nav-links',
     }, 
     {
         title: 'PORTFOLIO',
-        url: '/portfolio/',
+        url: '/portfolio/projects/',
         cName: 'nav-links',
     },   
     {
         title: 'CONTACT ME',
-        url: '/contact/',
+        url: '/portfolio/contact/',
         cName: 'nav-links',
     },
     {
         title: 'MY CV',
-        url: '/cv/',
+        url: '/portfolio/cv/',
         cName: 'nav-links',
     }
 ]

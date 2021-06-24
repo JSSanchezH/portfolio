@@ -16,7 +16,7 @@ export default class Nav extends Component {
     return (
       <aside className="Sidebar">
         <div className="SidebarItems">
-          <NavLink exact to="/" className="person active">
+          <NavLink exact to="/portfolio/" className="person active">
             <div className="person-avatar">
               <img src={Avatar} alt="Juan Sebastian Sanchez Hincapie" className="avatar"/>
             </div>
