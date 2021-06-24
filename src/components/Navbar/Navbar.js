@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
+import { NavLink } from 'react-router-dom';
+import {Button} from '../Button';
 import './Navbar.css'
 import Avatar from './Juan.jpg'
 
 export default class Nav extends Component {
-  state = { clicked: false };
+  state = { clicked: true };
+
+  handleClick= () =>{
+    this.setState({clicked: !this.state.clicked})
+  }
 
   render() {
     return (
       <aside className="Sidebar">
         <div className="SidebarItems">
-          <a href="/" className="person">
+          <NavLink exact to="/" className="person active">
             <div className="person-avatar">
               <img src={Avatar} alt="Juan Sebastian Sanchez Hincapie" className="avatar"/>
             </div>
@@ -18,23 +24,25 @@ export default class Nav extends Component {
               <h1 className="person-title">JUAN SEBASTIAN SANCHEZ HINCAPIE</h1>
               <h2 className="person-subtitle">Full-stack Developer</h2>
             </div>
-          </a>
+          </NavLink>
+          <div className="icon-menu" onClick={this.handleClick}>
+
+          </div>
           <nav className="main-nav">
             <div className="nav-extendable">
-              <ul className="side-menu">
+              <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu' }>
                 {MenuItems.map((item, index)=> {
                   return (
                     <li key={index}>
-                      <a className={item.cName} href={item.url}>
+                      <NavLink className={item.cName} exact to={item.url}>
                         {item.title}
-                      </a>
+                      </NavLink>
                     </li>
                   )
                 })}
               </ul>
             </div>
-          </nav>
-          <div>
+            <div>
             <div className="social">
               <a target="_blank" href="mailto:juansebastiansanchezh@gmail.com" className="icon-mail"></a>
               <a target="_blank" href="https://linkedin.com/in/jssanchezh/" class="icon-in"></a>
@@ -44,6 +52,7 @@ export default class Nav extends Component {
             </div>
             {/* <p class="copy">&copy; J. S. Sánchez Hincapié 2021 - Todos los derechos reservados</p> */}
           </div>
+          </nav>
         </div>
       </aside>
     )
