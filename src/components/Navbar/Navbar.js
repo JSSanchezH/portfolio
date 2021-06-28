@@ -14,9 +14,9 @@ export default class Nav extends Component {
 
   render() {
     return (
-      <aside className="Sidebar">
-        <div className="SidebarItems">
-          <NavLink exact to="/portfolio/" className="person active">
+      <aside id="sidebar">
+        <div className="inner">
+          {/* <NavLink exact to="/portfolio/" className="person active">
             <div className="person-avatar">
               <img src={Avatar} alt="Juan Sebastian Sanchez Hincapie" className="avatar"/>
             </div>
@@ -24,34 +24,24 @@ export default class Nav extends Component {
               <h1 className="person-title">JUAN SEBASTIAN SANCHEZ HINCAPIE</h1>
               <h2 className="person-subtitle">Full-stack Developer</h2>
             </div>
-          </NavLink>
-          <div className="icon-menu" onClick={this.handleClick}>
+          </NavLink> */}
+          {/* <div className="icon-menu" onClick={this.handleClick}>
 
-          </div>
-          <nav className="main-nav">
+          </div> */}
+          <nav>
             <div className="nav-extendable">
               <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu' }>
                 {MenuItems.map((item, index)=> {
                   return (
-                    <li key={index}>
-                      <NavLink className={item.cName} exact to={item.url}>
+                    <li key={index} >
+                      <a className={item.cName} href={item.url}>
                         {item.title}
-                      </NavLink>
+                      </a>
                     </li>
                   )
                 })}
               </ul>
             </div>
-            <div>
-            <div className="social">
-              <a target="_blank" href="mailto:juansebastiansanchezh@gmail.com" className="icon-mail"></a>
-              <a target="_blank" href="https://linkedin.com/in/jssanchezh/" class="icon-in"></a>
-              <a target="_blank" href="https://github.com/JSSanchezH/" class="icon-gh"></a>
-              <a target="_blank" href="" class="icon-fb"></a>
-              <a target="_blank" href="" class="icon-tw"></a>
-            </div>
-            {/* <p class="copy">&copy; J. S. Sánchez Hincapié 2021 - Todos los derechos reservados</p> */}
-          </div>
           </nav>
         </div>
       </aside>
@@ -59,3 +49,14 @@ export default class Nav extends Component {
   }
 }
 
+//-----------------------------Footer
+// {/* <div>
+// <div className="social">
+//   <a target="_blank" href="mailto:juansebastiansanchezh@gmail.com" className="icon-mail"></a>
+//   <a target="_blank" href="https://linkedin.com/in/jssanchezh/" class="icon-in"></a>
+//   <a target="_blank" href="https://github.com/JSSanchezH/" class="icon-gh"></a>
+//   <a target="_blank" href="" class="icon-fb"></a>
+//   <a target="_blank" href="" class="icon-tw"></a>
+// </div>
+// {/* <p class="copy">&copy; J. S. Sánchez Hincapié 2021 - Todos los derechos reservados</p> */}
+// </div> */}

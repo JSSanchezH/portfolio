@@ -3,16 +3,14 @@ import {Home} from './components/Pages/Home';
 import {AboutMe} from './components/Pages/About me';
 import {Portfolio} from './components/Pages/Portfolio';
 import {Contact} from './components/Pages/Contact';
-import CV from './components/Pages/CV';
 import './App.css'
 import Nav from './components/Navbar/Navbar';
 
 function App() {
   return(
     <>
-      <Router>
-        <Nav/>  
-        <div className="pages">
+     {/* <Router>
+
           <Switch>
             <Route exact path="/portfolio/" component={Home}/>
             <Route path="/portfolio/About-me" component={AboutMe}/>
@@ -20,9 +18,16 @@ function App() {
             <Route path="/portfolio/Contact" component={Contact}/>
             <Route path="/portfolio/cv" component={CV}/>
           </Switch>
-        </div>
+        
 
-      </Router>
+      </Router> */}
+      <Nav/>  
+      <div id="wrapper">
+        <Home/>
+        <AboutMe/>
+        <Portfolio/>
+        <Contact/>
+      </div>
     </>
   )
 }
