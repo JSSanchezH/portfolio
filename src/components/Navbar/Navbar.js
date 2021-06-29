@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import {Button} from '../Button';
 import './Navbar.css'
-import Avatar from './Juan.jpg'
+// import Avatar from './Juan.jpg'
+import { Link } from "react-scroll";
 
 export default class Nav extends Component {
   state = { clicked: true };
@@ -34,9 +35,9 @@ export default class Nav extends Component {
                 {MenuItems.map((item, index)=> {
                   return (
                     <li key={index} >
-                      <a className={item.cName} href={item.url}>
-                        {item.title}
-                      </a>
+                      <Link className={item.cName} activeClass="active" to={item.url} spy={true} smooth={true} duration={600}>
+                         {item.title}
+                      </Link>
                     </li>
                   )
                 })}

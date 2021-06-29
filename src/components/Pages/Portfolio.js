@@ -1,10 +1,13 @@
 import React from 'react';
+import pic01 from '../images/pic01.jpg'
+import pic02 from '../images/pic02.jpg'
+import pic03 from '../images/pic03.jpg'
 
 export const Portfolio = () => {
     return (
         <section id="two" className="wrapper style2 spotlights">
         <section>
-            <a href="#" className="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+            <a href="#" className="image"><img src={pic01} alt="" data-position="center center" /></a>
             <div className="content">
                 <div className="inner">
                     <h2>Sed ipsum dolor</h2>
@@ -16,7 +19,7 @@ export const Portfolio = () => {
             </div>
         </section>
         <section>
-            <a href="#" className="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+            <a href="#" className="image"><img src={pic02} alt="" data-position="top center" /></a>
             <div className="content">
                 <div className="inner">
                     <h2>Feugiat consequat</h2>
@@ -28,7 +31,7 @@ export const Portfolio = () => {
             </div>
         </section>
         <section>
-            <a href="#" className="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+            <a href="#" className="image"><img src={pic03} alt="" data-position="25% 25%" /></a>
             <div className="content">
                 <div className="inner">
                     <h2>Ultricies aliquam</h2>

@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from "react-scroll";
 import ('./Home.css')
+
 
 export const Home = () => {
     return (
         <section id="intro" className="wrapper style1 fullscreen fade-up">
         <div className="inner">
-            <h1>Lorem
+            <h1>Hello, My Name is Juan Sebastian,
             </h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href="http://html5up.net/license">Creative Commons</a>.</p>
+            <p>I'm a web developer and programmer living in Armenia, Colombia.</p>
             <ul className="actions">
-                <li><a href="#one" className="button scrolly">Learn more</a></li>
+                <li><Link to="one" className="button scrolly" smooth={true} duration={600}>Learn more</Link></li>
             </ul>
         </div>
     </section>
