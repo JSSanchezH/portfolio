@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from '../Button'
+import { Social } from '../Social';
 import './Contact.css'
 
 export const Contact = () => {
@@ -25,7 +27,7 @@ export const Contact = () => {
 											</div>
 										</div>
 										<ul className="actions">
-											<li><a href="" className="button submit">Send Message</a></li>
+											<li><Button children="Send Message"/></li>
 										</ul>
 									</form>
 								</section>
@@ -33,25 +35,40 @@ export const Contact = () => {
 									<ul className="contact">
 										<li>
 											<h3>Address</h3>
-											<a target="_blank" href="https://google.com/maps/place/Armenia,+Quindio">Armenia, Quindio<br />
+											<a target="_blank" rel="noreferrer" href="https://google.com/maps/place/Armenia,+Quindio">Armenia, Quindio<br />
 											Colombia</a>
 										</li>
 										<li>
 											<h3>Email</h3>
 											<a href="mailto:juansebastiansanchezh@gmail.com">juansebastiansanchezh@gmail.com</a>
 										</li>
-										<li>
+										{/* <li>
 											<h3>Phone</h3>
-											<span>+57 (300) 559-0746</span>
-										</li>
+											<span>+00 (000) 000-0000</span>
+										</li> */}
 										<li>
 											<h3>Social</h3>
 											<ul className="icons">
-												<li><a target="_blank" href="https://twitter.com/js_sanchezh" className="icon brands icon-tw"><span className="label">Twitter</span></a></li>
-												<li><a target="_blank" href="#" className="icon brands icon-fb"><span className="label">Facebook</span></a></li>
-												<li><a target="_blank" href="https://github.com/JSSanchezH/" className="icon brands icon-gh"><span className="label">GitHub</span></a></li>
-												{/* <li><a target="_blank" href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li> */}
-												<li><a target="_blank" href="https://www.linkedin.com/in/jssanchezh/" className="icon brands icon-in"><span className="label">LinkedIn</span></a></li>
+												<Social 
+												href="https://twitter.com/js_sanchezh" 
+												icon="icon brands icon-tw" 
+												text="Twitter"
+												/>
+												<Social 
+												href="https://facebook.com/jssanchezh" 
+												icon="icon brands icon-fb" 
+												text="Facebook"
+												/>
+												<Social 
+												href="https://github.com/JSSanchezH/" 
+												icon="icon brands icon-gh" 
+												text="GitHub"
+												/>
+												<Social 
+												href="https://www.linkedin.com/in/jssanchezh/" 
+												icon="icon brands icon-in" 
+												text="LinkedIn"
+												/>
 											</ul>
 										</li>
 									</ul>

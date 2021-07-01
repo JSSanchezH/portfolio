@@ -18,10 +18,5 @@ export const MenuItems = [
         title: 'CONTACT ME',
         url: 'three',
         cName: 'nav-links',
-    },
-    {
-        title: 'MY CV',
-        url: 'cv',
-        cName: 'nav-links',
     }
 ]

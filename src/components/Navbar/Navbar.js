@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 // import { NavLink } from 'react-router-dom';
-import {Button} from '../Button';
 import './Navbar.css'
+import cv from '../images/jssanchezh.pdf'
 // import Avatar from './Juan.jpg'
 import { Link } from "react-scroll";
+import { HLink } from '../HLink';
 
 export default class Nav extends Component {
   state = { clicked: true };
@@ -41,9 +42,11 @@ export default class Nav extends Component {
                     </li>
                   )
                 })}
+                {/* <li><a className='nav-links' href={cv} download='Juan-Sebastian-Sanchez-Hincapie.pdf'>CV</a></li> */}
               </ul>
             </div>
           </nav>
+          <HLink children="curriculum vitae" href={cv} download="Juan-Sebastian-Sanchez-Hincapie"/>
         </div>
       </aside>
     )

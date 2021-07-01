@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-scroll";
+import { LinkTo } from '../LinkTo';
 import ('./Home.css')
 
 
@@ -10,8 +10,9 @@ export const Home = () => {
             <h1>Hello, My Name is Juan Sebastian,
             </h1>
             <p>I'm a web developer and programmer living in Armenia, Colombia.</p>
+
             <ul className="actions">
-                <li><Link to="one" className="button scrolly" smooth={true} duration={600}>Learn more</Link></li>
+                <li><LinkTo to="one" children="Learn More"/></li>
             </ul>
         </div>
     </section>
