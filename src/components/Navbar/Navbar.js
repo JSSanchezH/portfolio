@@ -4,6 +4,8 @@ import './Navbar.css'
 import cv from '../images/jssanchezh.pdf'
 import { Link } from "react-scroll";
 import { HLink } from '../HLink';
+import LanguageSelector from '../LanguageSelector';
+
 
 export default class Nav extends Component {
   state = { clicked: true };
@@ -16,6 +18,7 @@ export default class Nav extends Component {
     return (
       <header id="sidebar">
         <div className="inner">
+        <LanguageSelector/>
           <nav className="nav">
           <span className='toggle-menu' onClick={this.handleClick}>
             <i className={this.state.clicked ? 'icon-menu active' : 'icon-menu'}></i>

@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Text, LanguageContext } from '../../containers/Language';
 import { LinkTo } from '../LinkTo';
 import ('./Home.css')
 
 
 export const Home = () => {
+    const { dictionary } = useContext(LanguageContext);
+
     return (
         <section id="intro" className="wrapper style1 fullscreen fade-up">
         <div className="inner">
-            <h1>Hello, My Name is Juan Sebastian,
-            </h1>
-            <p>I'm a web developer and programmer living in Armenia, Colombia.</p>
+            <h1><Text tid="home" bid="title"/></h1>
+            <p><Text tid="home" bid="subtitle"/></p>
 
             <ul className="actions">
-                <li><LinkTo to="one" children="Learn More"/></li>
+                <li><LinkTo to="one" children={dictionary.button.learnmore}/></li>
             </ul>
         </div>
     </section>

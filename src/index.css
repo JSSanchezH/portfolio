@@ -502,3 +502,19 @@ html, body {
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
 	}
+
+/* Translate */
+
+option {
+	color: black;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+	.language-selector {
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 150px;
+	}
+}

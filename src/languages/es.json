@@ -1,0 +1,73 @@
+{
+    "exploreHeader": "Explora",
+    "welcomeDescription": "Es una demo",
+    "clickMe": "Clickeame",
+    "aboutMe": "Mas info",
+    "buttonClicked": "Me clickeaste!",
+    "enterText": "Por favor escriba la respuesta",
+    "option1": "Opción 1",
+    "option2": "Opción 2",
+    "option3": "Opción 3",
+    "option4": "Opción 4",
+
+    "home":{
+        "title": "Hola, Mi Nombre es Juan Sebastian,",
+        "subtitle": "Soy un desarrollador y programador web que vive en Armenia, Colombia."
+    },
+
+    "aboutme":{
+        "title": "Acerca de Mí",
+        "subtitle": "Soy un desarrollador y programador web que vive en Armenia, Colombia.",
+   
+        "section1": "Lorem ipsum amet",
+        "paragraph1": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section2": "Aliquam sed nullam",
+        "paragraph2": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section3": "Sed erat ullam corper",
+        "paragraph3": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section4": "Veroeros quis lorem",
+        "paragraph4": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section5": "Urna quis bibendum",
+        "paragraph5": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section6": "Aliquam urna dapibus",
+        "paragraph6": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus."
+    },
+
+    "portfolio":{
+        "section1": "Lorem ipsum amet",
+        "paragraph1": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section2": "Aliquam sed nullam",
+        "paragraph2": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        
+        "section3": "Sed erat ullam corper",
+        "paragraph3": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus."
+    },
+
+    "contactme":{
+        "title": "Ponerse en contacto",
+        "subtitle": "Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "address": "Dirección",
+        "social": "Social"
+
+    },
+
+    "button":{
+        "learnmore": "Saber más"
+    },
+
+    "navbar":{
+        "welcome":"Bienvenido",
+        "aboutme":"Acerca de mí",
+        "portfolio":"Portafolio",
+        "contactme":"Contáctame"
+    }
+}

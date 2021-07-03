@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../containers/Language';
 import { HLink } from './HLink';
 
 export const SectionImage = ({
@@ -8,6 +9,8 @@ export const SectionImage = ({
     src,
     alt
 }) => {
+    const { dictionary } = useContext(LanguageContext);
+
     return (
         <section>
             <a href={href} className="image"><img src={src} alt={alt} data-position="center center" /></a>
@@ -16,7 +19,7 @@ export const SectionImage = ({
                     <h2>{title}</h2>
                     <p>{paragraph}</p>
                     <ul className="actions">
-                    <li><HLink children="Learn More" href="generic.html" /></li>
+                    <li><HLink children={dictionary.button.learnmore} href="generic.html" /></li>
                 </ul>
                 </div>
             </div>
