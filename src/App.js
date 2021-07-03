@@ -1,6 +1,6 @@
 // import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Home} from './components/Pages/Home';
-import {AboutMe} from './components/Pages/About me';
+import {AboutMe} from './components/Pages/AboutMe';
 import {Portfolio} from './components/Pages/Portfolio';
 import {Contact} from './components/Pages/Contact';
 import {Footer} from './components/Pages/Footer';

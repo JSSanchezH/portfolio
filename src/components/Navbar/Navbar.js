@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
-// import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 import cv from '../images/jssanchezh.pdf'
-// import Avatar from './Juan.jpg'
 import { Link } from "react-scroll";
 import { HLink } from '../HLink';
 
@@ -16,51 +14,31 @@ export default class Nav extends Component {
 
   render() {
     return (
-      <aside id="sidebar">
+      <header id="sidebar">
         <div className="inner">
-          {/* <NavLink exact to="/portfolio/" className="person active">
-            <div className="person-avatar">
-              <img src={Avatar} alt="Juan Sebastian Sanchez Hincapie" className="avatar"/>
-            </div>
-            <div>
-              <h1 className="person-title">JUAN SEBASTIAN SANCHEZ HINCAPIE</h1>
-              <h2 className="person-subtitle">Full-stack Developer</h2>
-            </div>
-          </NavLink> */}
-          {/* <div className="icon-menu" onClick={this.handleClick}>
-
-          </div> */}
-          <nav>
-            <div className="nav-extendable">
-              <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu' }>
+          <nav className="nav">
+          <span className='toggle-menu' onClick={this.handleClick}>
+            <i className={this.state.clicked ? 'icon-menu active' : 'icon-menu'}></i>
+          </span>
+              <ul className='nav-menu' >
                 {MenuItems.map((item, index)=> {
                   return (
-                    <li key={index} >
-                      <Link className={item.cName} activeClass="active" to={item.url} spy={true} smooth={true} duration={600}>
+                    <li key={index} className="menu-item" >
+                      <Link className={item.cName} to={item.url} spy={true} smooth={true} duration={600}>
                          {item.title}
                       </Link>
                     </li>
                   )
                 })}
-                {/* <li><a className='nav-links' href={cv} download='Juan-Sebastian-Sanchez-Hincapie.pdf'>CV</a></li> */}
+                <li>
+                  <HLink children="curriculum vitae" href={cv} download="Juan-Sebastian-Sanchez-Hincapie"/>
+                </li>
               </ul>
-            </div>
           </nav>
-          <HLink children="curriculum vitae" href={cv} download="Juan-Sebastian-Sanchez-Hincapie"/>
+
         </div>
-      </aside>
+      </header>
     )
   }
 }
 
-//-----------------------------Footer
-// {/* <div>
-// <div className="social">
-//   <a target="_blank" href="mailto:juansebastiansanchezh@gmail.com" className="icon-mail"></a>
-//   <a target="_blank" href="https://linkedin.com/in/jssanchezh/" class="icon-in"></a>
-//   <a target="_blank" href="https://github.com/JSSanchezH/" class="icon-gh"></a>
-//   <a target="_blank" href="" class="icon-fb"></a>
-//   <a target="_blank" href="" class="icon-tw"></a>
-// </div>
-// {/* <p class="copy">&copy; J. S. Sánchez Hincapié 2021 - Todos los derechos reservados</p> */}
-// </div> */}

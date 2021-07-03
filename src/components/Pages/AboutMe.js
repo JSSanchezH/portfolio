@@ -1,4 +1,5 @@
 import React from 'react';
+import './AboutMe.css'
 import { HLink } from '../HLink';
 import { SectionIcon } from '../SectionIcon';
 

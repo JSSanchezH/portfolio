@@ -1,0 +1,112 @@
+.image {
+	border: 0;
+}
+
+@media screen and (max-width: 980px) {
+
+	
+}
+
+@media screen and (max-width: 440px) {
+
+	img {
+		width: 100%;
+	}
+}
+
+/* Spotlights */
+
+.spotlights > section {
+	display: flex;
+	flex-direction: row;
+	min-height: 22.5em;
+}
+
+	body.is-ie .spotlights > section {
+		min-height: 0;
+	}
+
+	.spotlights > section > .image {
+		background-position: center center;
+		background-size: cover;
+		border-radius: 0;
+		display: block;
+		position: relative;
+		width: 25em;
+	}
+
+		.spotlights > section > .image img {
+			border-radius: 0;
+			display: block;
+		}
+
+
+	.spotlights > section > .content {
+		padding: 4em 5em 2em 5em ;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50em;
+	}
+
+		.spotlights > section > .content > .inner {
+			transform: translateX(0) translateY(0);
+			transition: opacity 1s ease, transform 1s ease;
+			opacity: 1;
+		}
+
+	.spotlights > section:nth-child(2) {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
+	.spotlights > section:nth-child(3) {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.spotlights > section.inactive > .image:before,
+	body.is-preload .spotlights > section > .image:before {
+		opacity: 1;
+	}
+
+
+	@media screen and (max-width: 1680px) {
+
+		.spotlights > section > .content {
+			padding: 4em 4em 2em 4em ;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.spotlights > section {
+			display: block;
+			margin: auto;	
+		}
+
+			.spotlights > section > .image {
+				width: 100%;
+			}
+
+				.spotlights > section > .image img {
+					margin: auto;
+				}
+
+			.spotlights > section > .content {
+				width: 100%;
+			}
+
+			.spotlights > section.inactive > .content > .inner,
+			body.is-preload .spotlights > section > .content > .inner {
+				transform: translateY(1em);
+			}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.spotlights > section > .content {
+			padding: 3em 2em 1em 2em ;
+		}
+
+	}

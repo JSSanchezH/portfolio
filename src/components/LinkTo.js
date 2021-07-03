@@ -6,6 +6,13 @@ export const LinkTo = ({
     to
 }) => {
     return (
-                <Link to={to} className="button scrolly" smooth={true} duration={600}>{children}</Link>
+                <Link 
+                to={to} 
+                className="button scrolly" 
+                smooth={true} 
+                duration={600}
+                >
+                    {children}
+                </Link>
             )
     }
