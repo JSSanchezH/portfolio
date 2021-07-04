@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { AboutMeItems } from './AboutMeItems';
 import { Text, LanguageContext } from '../../containers/Language';
 import './AboutMe.css'
 import { HLink } from '../HLink';
@@ -13,36 +14,14 @@ export const AboutMe = () => {
 					<h2><Text tid="aboutme" bid="title"/></h2>
 					<p><Text tid="aboutme" bid="subtitle"/></p>
 					<div className="features">
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section1}
-						paragraph={dictionary.aboutme.paragraph1}
-						/>
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section2}
-						paragraph={dictionary.aboutme.paragraph2}
-						/>
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section3}
-						paragraph={dictionary.aboutme.paragraph3}
-						/>
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section4}
-						paragraph={dictionary.aboutme.paragraph4}
-						/>
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section5}
-						paragraph={dictionary.aboutme.paragraph5}
-						/>
-						<SectionIcon 
-						icon="icon solid major icon-fb" 
-						title={dictionary.aboutme.section6}
-						paragraph={dictionary.aboutme.paragraph6}
-						/>
+						{AboutMeItems.map((item, index)=> (
+							<SectionIcon
+							key={index} 
+							icon={item.cName} 
+							title={dictionary[item.id][item.title]}
+							paragraph={dictionary[item.id][item.paragraph]}
+							/>
+                 		 ))}
 					</div>
 					<ul className="actions">
 						<li><HLink children={dictionary.button.learnmore} href="generic.html" /></li>

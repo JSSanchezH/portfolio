@@ -1,23 +1,25 @@
-import lang from '../../languages/es.json'
-
 export const MenuItems = [
     {
-        title: lang.navbar.welcome,
+        id: 'navbar',
+        title: 'welcome',
         url: 'intro',
         cName: 'nav-links',
-    }, 
+    },  
     {
-        title: lang.navbar.aboutme,
+        id: 'navbar',
+        title: 'aboutme',
         url: 'one',
         cName: 'nav-links',
     }, 
     {
-        title: lang.navbar.portfolio,
+        id: 'navbar',
+        title: 'portfolio',
         url: 'two',
         cName: 'nav-links',
     },   
     {
-        title: lang.navbar.contactme,
+        id: 'navbar',
+        title: 'contactme',
         url: 'three',
         cName: 'nav-links',
     }
