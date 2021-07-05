@@ -17,7 +17,11 @@ export const AboutMe = () => {
 						{AboutMeItems.map((item, index)=> (
 							<SectionIcon
 							key={index} 
-							icon={item.cName} 
+							id={item.icon}
+							className={item.cName} 
+							dataIcon={item.dataIcon}
+							d={item.d}
+							viewBox={item.viewBox}
 							title={dictionary[item.id][item.title]}
 							paragraph={dictionary[item.id][item.paragraph]}
 							/>

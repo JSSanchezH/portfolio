@@ -7,10 +7,9 @@ import {Nav} from './components/Navbar/Navbar';
 import { LanguageProvider } from './containers/Language';
 import './App.css'
 
-
 export const App = () =>(
     <LanguageProvider>
-      <Nav/>  
+      <Nav/>
       <div id="wrapper">
         <Home/>
         <AboutMe/>

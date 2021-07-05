@@ -11,6 +11,7 @@ export const Portfolio = () => {
         <section id="two" className="wrapper style2 spotlights">
 			{PortfolioItems.map((item, index)=> (
                 <SectionImage 
+                    key={index}
                     href={item.href}
                     src={item.src} alt={item.alt}
                     title={dictionary[item.id][item.title]}
