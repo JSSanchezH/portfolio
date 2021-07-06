@@ -11,7 +11,6 @@ export const SectionIcon = ({
 }) => {
     return (
         <section>
-            <span className={className} ></span>
             <Icon className={className} dataIcon={dataIcon} d={d} viewBox={viewBox}/>
             <h3>{title}</h3>
             <p>{paragraph}</p>
