@@ -18,39 +18,39 @@
         "title": "About Me",
         "subtitle": "I'm a web developer and programmer living in Armenia, Colombia.",
    
-        "section1": "Lorem ipsum amet",
+        "section1": "Programming",
         "paragraph1": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
         
-        "section2": "Aliquam sed nullam",
+        "section2": "Git",
         "paragraph2": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
         
-        "section3": "Sed erat ullam corper",
+        "section3": "JavaScript",
         "paragraph3": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
         
-        "section4": "Veroeros quis lorem",
+        "section4": "Node JS",
         "paragraph4": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
         
-        "section5": "Urna quis bibendum",
+        "section5": "React JS",
         "paragraph5": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
         
-        "section6": "Aliquam urna dapibus",
+        "section6": "Python",
         "paragraph6": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus."
     },
 
     "portfolio":{
-        "section1": "Lorem ipsum amet",
-        "paragraph1": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        "section1": "My Portfolio",
+        "paragraph1": "It is my first SPA (Single Page Application) created 100% with JavaScript using the MERN Stack (Mongodb, Express, React & Node), it has some basic animations and it has responsive web design.",
         
-        "section2": "Aliquam sed nullam",
-        "paragraph2": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.",
+        "section2": "Discord Bot",
+        "paragraph2": "It is a Discord bot that uses the Discord JS module from Node JS, which interacts with the Discord API, a totally modular structure was used thinking about the future growth of the bot.",
         
-        "section3": "Sed erat ullam corper",
-        "paragraph3": "Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus."
+        "section3": "Web Scraping",
+        "paragraph3": "It is a script which collects data from a web page using the Node Puppeteer library, the data collected by the script is converted into XLSX format for storage."
     },
 
     "contactme":{
         "title": "Get in touch",
-        "subtitle": "Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.",
+        "subtitle": "I am available for hire and open to any ideas of cooperation, you can fill out the form, contact me through any of the social networks or simply send me an email.",
         "name": "Name",
         "email": "Email",
         "message": "Message",

@@ -38,6 +38,13 @@
 		.spotlights > section > .image img {
 			border-radius: 0;
 			display: block;
+			width: 25em;
+			filter: blur(3px);
+			transition: all 0.5s;
+		}
+		.spotlights > section > .image img:hover{
+			filter: blur(0px);
+			transition: all 0.5s;
 		}
 
 

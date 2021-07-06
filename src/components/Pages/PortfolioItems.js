@@ -1,30 +1,32 @@
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from '../images/portfolio.png'
+import pic02 from '../images/discord.png'
+import pic03 from '../images/scraping.png'
+
+const id = 'portfolio';
 
 export const PortfolioItems = [
     {
-        id: 'portfolio',
+        id: id,
         title: 'section1',
         paragraph: 'paragraph1',
-        href: '',
+        href: 'https://github.com/JSSanchezH/portfolio',
         src: pic01,
-        alt: ''
+        alt: 'Juan Sebastian Sanchez Hincapie'
     },
     {
-        id: 'portfolio',
+        id: id,
         title: 'section2',
         paragraph: 'paragraph2',
-        href: '',
+        href: 'https://github.com/JSSanchezH/Deathbot',
         src: pic02,
-        alt: ''
+        alt: 'Discord'
     },
     {
-        id: 'portfolio',
+        id: id,
         title: 'section3',
         paragraph: 'paragraph3',
-        href: '',
+        href: 'https://github.com/JSSanchezH/Web-Scraping',
         src: pic03,
-        alt: ''
+        alt: 'Scraping'
     },
 ]

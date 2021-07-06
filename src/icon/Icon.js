@@ -3,7 +3,6 @@ import React from  'react';
 export const Icon = ({ 
     dataIcon,
     className, 
-    id,
     viewBox,
     d
 }) => {

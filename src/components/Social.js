@@ -1,9 +1,13 @@
 import React from 'react'
+import { Icon } from '../icon/Icon'
 
 export const Social = ({
     href,
-    icon,
-    text
+    text,
+    className,
+    dataIcon,
+    d,
+    viewBox
 }) => {
     return (
         <li>
@@ -11,12 +15,13 @@ export const Social = ({
             target="_blank" 
             rel="noreferrer" 
             href={href} 
-            className={icon}
+            className={className}
             >
-            <span 
-            className="label"
-            >{text}
-            </span>
+                <Icon dataIcon={dataIcon} d={d} viewBox={viewBox}/>
+                
+                <span className="label">
+                    {text}
+                </span>
             </a>
         </li>
             )

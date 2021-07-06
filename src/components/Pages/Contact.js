@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Text, LanguageContext } from '../../containers/Language';
+import { ContactItems } from './ContactItems';
 import { Button } from '../Button'
 import { Social } from '../Social';
 import './Contact.css'
@@ -52,7 +53,7 @@ export const Contact = () => {
 										<li>
 											<h3><Text tid="contactme" bid="social"/></h3>
 											<ul className="icons">
-												<Social 
+												{/* <Social 
 												href="https://twitter.com/js_sanchezh" 
 												icon="icon brands icon-tw" 
 												text="Twitter"
@@ -71,7 +72,19 @@ export const Contact = () => {
 												href="https://www.linkedin.com/in/jssanchezh/" 
 												icon="icon brands icon-in" 
 												text="LinkedIn"
+												/> */}
+												{ContactItems.map((item, index)=> (
+												<Social
+												key={index} 
+												id={item.id}
+												href={item.href}
+												className={item.cName} 	
+												dataIcon={item.dataIcon}
+												d={item.d}
+												viewBox={item.viewBox}
+												text={item.dataIcon}
 												/>
+											))}
 											</ul>
 										</li>
 									</ul>

@@ -13,10 +13,17 @@ export const SectionImage = ({
 
     return (
         <section>
-            <a href={href} className="image"><img src={src} alt={alt} data-position="center center" /></a>
+            <a 
+            className="image" 
+            href={href} 
+            rel="noreferrer" 
+            target="_blank"
+            >
+                <img src={src} alt={alt} data-position="center center"/>
+            </a>
             <div className="content">
                 <div className="inner">
-                    <h2>{title}</h2>
+                    <h2>{title}</h2>    
                     <p>{paragraph}</p>
                     <ul className="actions">
                     <li><HLink children={dictionary.button.learnmore} href="generic.html" /></li>
